@@ -32,7 +32,7 @@ if num1>0 and num2>0 and num3>0:
     print(f'Att {num3} är större än {num1} är {num3>num1}')
     print(f'Medelvardet av {num1}, {num2} och {num3} ar {(num1+num2+num3)/3}')
 else:
-    print('please write any whole number')
+    print('please write any whole number from 1 not decimal numbers')
 
 
 nummer12 = [num1, num2, num3]
