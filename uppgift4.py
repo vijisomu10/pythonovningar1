@@ -22,7 +22,7 @@ Svårighetsgrad 2
 – Svara användaren om ni har samma hobby eller inte!
 """
 my_name = 'Viji'
-my_age = 42
+my_age = 21
 my_hobby = "puzzle"
 name = input("Skriv i ditt namn: ")
 age = int(input("Skriv i din ålder: "))
