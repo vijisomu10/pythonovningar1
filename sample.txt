@@ -1,0 +1,9 @@
+Welcome to STI!
+Kursen syftar till att de studerande ska få grundläggande kunskaper
+i programmering med fokus på Python och även en introduktion till 
+andra programmeringsspråk som Java och Scala. Speciell vikt läggs 
+vid att lära sig programmera mot data från olika datakällor och 
+dataformat såsom filer/apier och Excel, JSON, XML, CSV. De studerande
+kommer dessutom få kunskaper i att använda versionshanteringssystem 
+(GIT) både för egen del och som en del i ett team. Färdigheter i att 
+validera och testa sin kod så de uppfyller krav kommer utvecklas.
