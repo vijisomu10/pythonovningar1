@@ -24,15 +24,16 @@ jobs:
 
       - name: Log in to Docker Hub
         env:
-          DOCKER_USERNAME: ${{ secrets.DOCKER_VIJI_USERNAME }}
-          DOCKER_PASSWORD: ${{ secrets.DOCKER_VIJI_PASSWORD }}
+          USERNAME: ${{ secrets.DOCKER_VIJI_USERNAME }}
+          PASSWORD: ${{ secrets.DOCKER_VIJI_PASSWORD }}
+          # DOCKER_VIJI_PASSWORD, DOCKER_VIJI_USERNAME
         run: |
-          echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+          echo "$PASSWORD" | docker login -u "$USERNAME" --password-stdin
 
       - name: Build Docker Image
         run: |
-          docker build -t $DOCKER_USERNAME/test_dockerhub:latest .
+          docker build -t $USERNAME/test_dockerhub:latest .
 
       - name: Push Docker Image to Docker Hub
         run: |
-          docker push $DOCKER_USERNAME/test_dockerhub:latest
+          docker push $USERNAME/test_dockerhub:latest
