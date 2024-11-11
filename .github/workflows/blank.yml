@@ -34,7 +34,7 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t vijisomu10/test_dockerhub:latest .
+          docker build -t vijisomu10/test_dockerhub:latest -f path/to/Dockerfile .
 
       - name: Push Docker Image to Docker Hub
         run: |
